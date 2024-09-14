@@ -4,7 +4,6 @@ After=syslog.target
 
 [Service]
 ExecStart=/home/ubuntu/myvenv/bin/uwsgi -i /srv/Django_Practice/mysite/config/uwsgi/mysite.ini
-Environment="DJANGO_SECRET_KEY=your_secret_key_here"
 
 Restart=always
 KillSignal=SIGQUIT
